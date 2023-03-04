@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
-        glue = "com/cydeo/step_definitions",
+        glue = "com/fleetGru/step_definitions",
         dryRun = false,
         tags = "@smoke",
         publish = true //generating a report with public link
