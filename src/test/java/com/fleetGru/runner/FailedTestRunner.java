@@ -1,4 +1,4 @@
-package com.fleetGru.runners;
+package com.fleetGru.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -10,4 +10,5 @@ import org.junit.runner.RunWith;
         glue = "com/fleetGru/step_definitions"
 )
 public class FailedTestRunner {
+
 }
