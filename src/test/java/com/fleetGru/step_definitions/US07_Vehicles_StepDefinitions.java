@@ -1,5 +1,6 @@
 package com.fleetGru.step_definitions;
 
+import com.fleetGru.utilities.ConfigurationReader;
 import com.fleetGru.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -9,7 +10,7 @@ public class US07_Vehicles_StepDefinitions {
 
     @Given("user is on the homepage")
     public void user_is_on_the_homepage() {
-        Driver.getDriver().get("url");
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
     }
     @When("user clicks on the {string} option")
