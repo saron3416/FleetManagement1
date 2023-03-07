@@ -15,8 +15,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/fleetGru/step_definitions",
-        dryRun = true,
-        tags = "",
+        dryRun = false,
+        tags = "@wip",
         publish = true //generating a report with public link
         // ,monochrome = false
 )
