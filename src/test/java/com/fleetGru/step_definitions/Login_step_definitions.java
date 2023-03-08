@@ -18,13 +18,11 @@ public class Login_step_definitions {
     }
     @When("the user enter valid username")
     public void the_user_enter_valid_username() {
-
         basePage.userName.sendKeys("storemanager51");
 
     }
     @When("the user enter valid password")
     public void the_user_enter_valid_password() {
-
         basePage.password.sendKeys("UserUser123");
 
     }
@@ -40,6 +38,19 @@ public class Login_step_definitions {
         String  expectedTitle = "Dashboard";
         BrowserUtils.verifyTitle(expectedTitle);
 
+    }
+
+
+
+
+    @When("the user enter {string}")
+    public void the_user_enter_username_with_param(String username) {
+        basePage.userName.sendKeys("storemanager51");
+
+    }
+    @When("the user enter {string}")
+    public void the_user_enter_password_username_with_param(String password) {
+        basePage.password.sendKeys("UserUser123");
 
     }
 
