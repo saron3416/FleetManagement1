@@ -43,12 +43,12 @@ public class Login_step_definitions {
 
 
 
-    @When("the user enter {string}")
+    @When("the user enters username {string}")
     public void the_user_enter_username_with_param(String username) {
         basePage.userName.sendKeys("storemanager51");
 
     }
-    @When("the user enter {string}")
+    @When("the user enters password {string}")
     public void the_user_enter_password_username_with_param(String password) {
         basePage.password.sendKeys("UserUser123");
 
