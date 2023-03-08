@@ -5,6 +5,6 @@ Feature: Verifying checkbox functionality
 
   Scenario: All checkboxes should be unchecked
     Given user is on the homepage
-    When user clicks on the "Fleet" option
+    When user navigates on the "Fleet" option
     And user choose "Vehicle" option from dropdown menu
     Then user should see all unchecked boxes
