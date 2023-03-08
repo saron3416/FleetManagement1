@@ -1,14 +1,13 @@
 Feature: Manage filters functionality verifications
+  Agile story: As a user, I want to manage filters on the Marketing page.
 
-  Scenario: Default checked filter options
+  Scenario:Checked filter options
     Given Users are on the homepage
-    And Click the Campaingns under the Marketing
-    When Click the Manage filters button
-    Then Verify 5 options are checked by default
-
-  Scenario: Unchecked boxes options verification
-    Given Users are on the homepage
-    And Click the Campaingns under the Marketing
-    When Click the Manage filters button
-    And Unchecked one or more filter options
+    And User hover over the "Marketing" option
+    When User clicks "Campaings" option
+    And User clicks the Manage filters button
+    Then Verify five options are checked by default
     Then Verify one or more options are unchecked
+
+
+
