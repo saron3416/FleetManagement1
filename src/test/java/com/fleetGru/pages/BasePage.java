@@ -26,23 +26,43 @@ public WebElement password;
 public WebElement Login_Btn;
 
 
+
+//we can try this method for all users to login
+    public void loginManager(String user){
+        String user_name = ConfigurationReader.getProperty(user+"_username");
+        String userPassword = ConfigurationReader.getProperty(user+"_password");
+        password.sendKeys(userPassword);
+        Login_Btn.click();
+        userName.sendKeys(user_name);
+
+
+
+    }
+
+
+/*
 public void loginStoreManager() {
     this.userName.sendKeys("storemanager51");
     this.password.sendKeys("UserUser123");
     this.Login_Btn.click();
 
 }
+
+
   public void loginSalesManager(){
     this.userName.sendKeys("salesmanager101");
     this.password.sendKeys("UserUser123");
     this.Login_Btn.click();
 }
 
+
     public void loginDriver(){
         this.userName.sendKeys("user1");
         this.password.sendKeys("UserUser123");
         this.Login_Btn.click();
     }
+
+ */
 
 
 }
